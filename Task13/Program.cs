@@ -10,9 +10,9 @@ Console.Clear();
 
 string SecondNumber(string secNumb)
 {
-    int result = 0;
+    Int64 result = 0;
     char[] arr = secNumb.ToCharArray();
-    if (int.TryParse(secNumb, out result))
+    if (Int64.TryParse(secNumb, out result)) //Int64 если пользователь вводит число больше чем Int32
     {
         if (arr.Length > 2)
         {
