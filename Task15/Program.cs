@@ -9,12 +9,11 @@ Console.Clear();
 string SecondNumber(string secNumb)
 {
     int result = 0;
-    char[] arr = secNumb.ToCharArray();
     if (int.TryParse(secNumb, out result))
     {
-        if (arr.Length == 1 && int.Parse(secNumb) > 0 && int.Parse(secNumb) <= 7)
+        if (int.Parse(secNumb) > 0 && int.Parse(secNumb) <= 7)
         {
-            if (int.Parse(arr[0].ToString()) == 6 ^ int.Parse(arr[0].ToString()) == 7)
+            if (int.Parse(secNumb) == 6 ^ int.Parse(secNumb) == 7)
                 return "да";
             else return "нет";
         }
